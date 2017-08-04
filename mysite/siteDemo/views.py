@@ -81,7 +81,7 @@ def shutdown_ecs_pangu(request):
 	return HttpResponse("小明要求的，没什么卵用")
 # ------------------------------------OSS数据页面------------------------------------
 def OssDataShow(request):
-	return render_to_response("test.html")
+	return render_to_response("oss_DataShow.html")
 # ------------------------------------配置页面---------------------------------------
 
 def parseConf(request):

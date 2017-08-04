@@ -1,11 +1,64 @@
 {% extends "index.html" %}
 {% load staticfiles %}
 {% block content %} 
-
-<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-  <legend>OSS数据大盘</legend>
-</fieldset>
+<!-- <link rel="stylesheet" href="{% static 'freestyle.css' %}"> -->
+<link rel="stylesheet" href="{% static 'css/amazeui.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/admin.css' %}">
 <script src="{% static 'echarts-liquidfill.js' %}"></script>
-<link rel="stylesheet" href="{% static 'freestyle.css' %}">
-<div class="col-mcont"></div>
+<script src="{% static 'oss.js' %}"></script>
+<div class="admin-content">
+  <div class="admin-content-body">
+    <div class="am-g">
+
+      <div class="am-u-sm-4" style="height:300px;padding:0px">
+        <div class="am-panel am-panel-default" style="height: 95%;width: 95%;margin:auto">
+          <div class="am-panel-bd" >这是一个基本的面板组件。</div>
+        </div>
+      </div>
+
+      <div class="am-u-sm-4" style="height:300px;padding:0px">
+        <div class="am-panel am-panel-default" style="height: 95%;width: 95%;margin:auto">
+          <div class="am-panel-hd"><h2 class="am-panel-title">OSS使用率</h2></div>
+          <div id="oss_usage" class="am-panel-bd" style="height: 90%;width: 100%"></div>
+        </div>
+      </div>
+      <div class="am-u-sm-4" style="height:300px;padding:0px">
+        <div class="am-panel am-panel-default " style="height: 95%;width: 95%;margin:auto">
+          <div class="am-panel-hd" ><h2 class="am-panel-title">OSS 服务状态</h2></div>
+          <div class="am-panel-bd" style="height: 45%;width: 70%">
+            <div class="am-g" style="width: 150%">
+              <div class="am-u-lg-3">
+                <span class="layui-icon" style="margin: auto;font-size: 60px; color:rgb(212, 209, 210);">&#xe605;</span>
+              </div>
+              <div class="am-u-lg-6">
+                <span class="layui-icon" style="margin: auto;font-size: 60px; color:rgb(212, 209, 210);">online</span>
+              </div>
+              <div class="am-u-lg-3">
+                <span class="layui-icon" style="margin: auto;font-size: 60px; color:rgb(212, 209, 210);">8</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="am-panel-bd" style="height: 45%;width: 70%">
+            
+            <div class="am-g" style="width: 150%">
+              <div class="am-u-lg-3">
+                <span class="layui-icon" style="margin: auto;font-size: 60px; color:rgb(212, 209, 210);">&#x1006;</span>
+              </div>
+              <div class="am-u-lg-6">
+                <span class="layui-icon" style="margin: auto;font-size: 60px; color:rgb(212, 209, 210);">offline</span>
+              </div>
+              <div class="am-u-lg-3">
+                <span class="layui-icon" style="margin: auto;font-size: 60px; color:rgb(212, 209, 210);">0</span>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 {% endblock %}
