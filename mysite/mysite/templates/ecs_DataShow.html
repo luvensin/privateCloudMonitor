@@ -1,0 +1,317 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+{% block content %}
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+  <legend>ECS数据大盘</legend>
+</fieldset>
+
+<form class="layui-form">
+   <div class="layui-form-item">
+      <label class="layui-form-label">ECS主机</label>
+      <div class="layui-input-block">
+        <select name="dataflow" id="dataflow" lay-filter="dataflow">
+        <!-- <c: forEach items="${data}" var="interest"> -->
+          {% for row in data %}
+          <option value="{{ row.ecsnc_id }}" id="selected_id" >{{ row.ecsnc_ip }}</option>
+          {% endfor %}
+        <!-- </c: forEach> -->
+        </select>
+        
+      </div>
+    </div>
+</form>
+
+<div id="ecs-vm" style="width:1400px; height: 400px;"></div>
+<script type="text/javascript">
+layui.use('form', function () {
+  var form = layui.form();
+  form.on('select(dataflow)', function(data) {
+    var id = data.value
+
+
+  $(document).ready(function(){
+    $.ajax({
+      type : "GET",
+      dataType : "json",
+      async:true,
+      //data : id,
+      url : {% url 'EcsDataPanel' %},
+      success : function(json){
+        
+        for ( each in json.nc_memory ) {
+          var cpu = json.nc_cpu[each]
+          var memory = json.nc_memory[each]
+          if (cpu.nc == id) {
+            var cpu_data_flow = cpu
+            var items = [];
+            for (var n=0 ; n<cpu_data_flow.vcpu.length; n++){
+              items.push(cpu_data_flow.vcpu[n].name)
+            }
+          }
+          if (memory.nc == id){
+            var memory_data_flow = memory
+          }
+        }
+        option = {
+            title : {
+                text: '主机 "'+cpu_data_flow.ip+'"资源使用情况',
+                subtext: cpu_data_flow.nc,
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                x : 'center',
+                y : 'bottom',
+                data : items
+            },
+            toolbox: {
+                show : true,
+                feature : {
+                    mark : {show: true},
+                    dataView : {show: true, readOnly: false},
+                    magicType : {
+                        show: true, 
+                        type: ['pie', 'funnel']
+                    },
+                    restore : {show: true},
+                    saveAsImage : {show: true}
+                }
+            },
+            calculable : true,
+            series : [
+                {
+                    name:'cpu核数使用情况',
+                    type:'pie',
+                    radius : [20, 110],
+                    center : ['25%', 200],
+                    roseType : 'radius',
+                    width: '40%',       // for funnel
+                    max: 100,            // for funnel
+                    itemStyle : {
+                        normal : {
+                            label : {
+                                show : true
+                            },
+                            labelLine : {
+                                show : true
+                            }
+                        },
+                        emphasis : {
+                            label : {
+                                show : true
+                            },
+                            labelLine : {
+                                show : true
+                            }
+                        }
+                    },
+                    data : cpu_data_flow.vcpu
+                    // data:[
+                    //     {value:10, name:'rose1'},
+                    //     {value:5, name:'rose2'},
+                    //     {value:15, name:'rose3'},
+                    //     {value:25, name:'rose4'},
+                    //     {value:20, name:'rose5'},
+                    //     {value:35, name:'rose6'},
+                    //     {value:30, name:'rose7'},
+                    //     {value:40, name:'rose8'}
+                    // ]
+                },
+                {
+                    name:'内存情况',
+                    type:'pie',
+                    radius : [30, 110],
+                    center : ['75%', 200],
+                    roseType : 'radius',
+                    x: '50%',               // for funnel
+                    max: 100,                // for funnel
+                    sort : 'ascending', 
+                    data : memory_data_flow.vmem    // for funnel
+                    // data:[
+                    //     {value:10, name:'rose1'},
+                    //     {value:5, name:'rose2'},
+                    //     {value:15, name:'rose3'},
+                    //     {value:25, name:'rose4'},
+                    //     {value:20, name:'rose5'},
+                    //     {value:35, name:'rose6'},
+                    //     {value:30, name:'rose7'},
+                    //     {value:40, name:'rose8'}
+                    // ]
+                }
+            ]
+        };
+        var myChart = echarts.init(document.getElementById('ecs-vm'));
+        myChart.setOption(option); 
+      },
+      error:function(e){
+        layer.msg(e.responseText);
+      }
+
+      });  
+    }); 
+  });
+});                                   
+</script>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+  <legend>集群盘古状态</legend>
+</fieldset>
+
+<div id="ecs-pangu" style="width:1400px; height: 250px;"></div>
+<style type="text/css">
+  .dataTables_wrapper .dataTables_length {
+      float: left;
+      padding-bottom: 10px;
+  }
+</style>
+<div>
+  <table id="pangu_state_tb"  class="layui-table">
+    <thead>
+      <tr>
+        <th align="center" >主机名</th>
+        <th align="center" >IP地址</th>
+        <th align="center" >状态</th> 
+        <th width="100" align="center">下线/关机</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+      option = {
+          tooltip : {
+              trigger: 'axis',
+              axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                  type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+              }
+          },
+          legend: {
+              data: ['总量','使用','空闲']
+          },
+          grid: {
+              left: '3%',
+              right: '5%',
+              bottom: '3%',
+              containLabel: true
+          },
+          xAxis:  {
+              type: 'value'
+          },
+          yAxis: {
+              type: 'category',
+              data: ['使用情况一览(GB)']
+          },
+          series: [
+              {
+                  name: '总量',
+                  type: 'bar',
+                  stack: '总量',
+                  label: {
+                      normal: {
+                          show: true,
+                          position: 'insideRight'
+                      }
+                  },
+                  data: [100506]
+              },
+              {
+                  name: '使用',
+                  type: 'bar',
+                  stack: '使用',
+                  label: {
+                      normal: {
+                          show: true,
+                          position: 'insideRight'
+                      }
+                  },
+                  data: [26000]
+              },
+              {
+                  name: '空闲',
+                  type: 'bar',
+                  stack: '空闲',
+                  label: {
+                      normal: {
+                          show: true,
+                          position: 'insideRight'
+                      }
+                  },
+                  data: [74506]
+              }
+          ]
+      };
+      var panguChart = echarts.init(document.getElementById('ecs-pangu'));
+      panguChart.setOption(option); 
+
+
+  });
+  layui.use(['form','layer'], function(){
+    var form = layui.form(),layer = layui.layer,$ = layui.jquery;
+    $('#pangu_state_tb').DataTable({
+            // "dom": '<"top">rt<"bottom"flp><"clear">',
+            "autoWidth": false,                     // 自适应宽度
+            "stateSave": true,                      // 刷新后保存页数
+            "order": [[ 1, "desc" ]],               // 排序
+            "searching": false,                    // 本地搜索
+            "info": true,                           // 控制是否显示表格左下角的信息
+            "stripeClasses": ["odd", "even"],       // 为奇偶行加上样式，兼容不支持CSS伪类的场合
+            "pagingType": "simple_numbers",         // 分页样式 simple,simple_numbers,full,full_numbers
+            "ajax": {
+                "url": {% url 'EcsDataPangu' %}
+            },
+            "sServerMethod" : "POST",               // POST
+            "deferRender": true,                    // 当处理大数据时，延迟渲染数据，有效提高Datatables处理能力
+            "columns": [                            // 自定义数据列
+                {data: 'hostname'},
+                {data: 'ip'},
+                {data: 'status'},
+                {data: function(obj){
+                    return  '<a id="offline_ecs_pangu" class="layui-btn layui-btn-small btn-edit" data-id="'+obj.ip+'">下线</a>' +
+                            '<a id="shutdown_ecs_pangu" class="layui-btn layui-btn-small layui-btn-normal btn-edit" data-id="'+obj.ip+'">关机毛</a>';
+                }}
+            ],
+            "stateSaveParams": function () {           // 初始化完成调用事件
+                // 重新渲染form checkbox 如果你要使用layui的复选框样式打开这个
+                form.render('checkbox');
+            }
+
+        });
+        $(document).on('click','#offline_ecs_pangu', function(data){
+            // getIds(table对象,获取input为id的属性)
+            var ip_lock = $(this).attr('data-id')
+            $.ajax({
+              type : "POST",
+              dataType : "JSON",
+              url : {% url 'offline_ecs_pangu' %},
+              data: {"ip":ip_lock},
+              success:function(data){
+                layer.msg(data)
+              },
+              error:function(e){
+                layer.msg(e.responseText)
+              }
+            });
+        });
+        $(document).on('click','#shutdown_ecs_pangu',function(data){
+            var ip_unlock = $(this).attr('data-id')
+            $.ajax({
+              type : "POST",
+              dataType : "JSON",
+              url : {% url 'shutdown_ecs_pangu' %},
+              data: {"id":ip_unlock},
+              success:function(data){
+                layer.msg(data)
+              },
+              error:function(e){
+                layer.msg(e.responseText)
+              }
+            });
+        });
+
+  });
+</script>     
+{% endblock %}          

@@ -1,0 +1,88 @@
+  1. NORMAL (30000/32520) (ttl=  20) tcp://172.100.4.1:10260 t01d33001.cloud.d33.dt01  SendBuffer : 0(KB)
+	Disk Id:1	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1731 GB	ChunkFileNumber:3627	ChunkFileSize:98 GB	 NonTempChunkNumber: 3627	 NonTempChunkSize: 98 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:2	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1735 GB	ChunkFileNumber:3502	ChunkFileSize:94 GB	 NonTempChunkNumber: 3502	 NonTempChunkSize: 94 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:3	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1730 GB	ChunkFileNumber:3655	ChunkFileSize:99 GB	 NonTempChunkNumber: 3655	 NonTempChunkSize: 99 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:4	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1735 GB	ChunkFileNumber:3602	ChunkFileSize:95 GB	 NonTempChunkNumber: 3602	 NonTempChunkSize: 95 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:5	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1732 GB	ChunkFileNumber:3598	ChunkFileSize:98 GB	 NonTempChunkNumber: 3598	 NonTempChunkSize: 98 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:6	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1731 GB	ChunkFileNumber:3615	ChunkFileSize:98 GB	 NonTempChunkNumber: 3615	 NonTempChunkSize: 98 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:7	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1730 GB	ChunkFileNumber:3698	ChunkFileSize:99 GB	 NonTempChunkNumber: 3698	 NonTempChunkSize: 99 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:8	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1729 GB	ChunkFileNumber:3609	ChunkFileSize:99 GB	 NonTempChunkNumber: 3609	 NonTempChunkSize: 99 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:9	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1733 GB	ChunkFileNumber:3614	ChunkFileSize:97 GB	 NonTempChunkNumber: 3614	 NonTempChunkSize: 97 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	SSDCache Id:1	DiskStatus:DISK_OK	HuatuoScore:NA	Cleanup:--	TotalSize:446 GB	FreeSize:12 GB
+	SSDCache Id:2	DiskStatus:DISK_OK	HuatuoScore:NA	Cleanup:--	TotalSize:446 GB	FreeSize:12 GB
+  2. NORMAL (20000/38588) (ttl=  20) tcp://172.100.4.4:10260 t01d33004.cloud.d33.dt01  SendBuffer : 0(KB)
+	Disk Id:1	DiskStatus:DISK_ERROR	HuatuoScore:NA	Backup:Doing	TotalSize:1861 GB	FreeSize:1605 GB	ChunkFileNumber:10182	ChunkFileSize:251 GB	 NonTempChunkNumber: 10182	 NonTempChunkSize: 251 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:2	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1737 GB	ChunkFileNumber:3485	ChunkFileSize:93 GB	 NonTempChunkNumber: 3485	 NonTempChunkSize: 93 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:3	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1737 GB	ChunkFileNumber:3524	ChunkFileSize:93 GB	 NonTempChunkNumber: 3524	 NonTempChunkSize: 93 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:4	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1732 GB	ChunkFileNumber:3631	ChunkFileSize:99 GB	 NonTempChunkNumber: 3631	 NonTempChunkSize: 99 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:5	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1734 GB	ChunkFileNumber:3559	ChunkFileSize:95 GB	 NonTempChunkNumber: 3559	 NonTempChunkSize: 95 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:6	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1732 GB	ChunkFileNumber:3573	ChunkFileSize:98 GB	 NonTempChunkNumber: 3573	 NonTempChunkSize: 98 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:7	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1735 GB	ChunkFileNumber:3548	ChunkFileSize:95 GB	 NonTempChunkNumber: 3548	 NonTempChunkSize: 95 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:8	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1733 GB	ChunkFileNumber:3561	ChunkFileSize:98 GB	 NonTempChunkNumber: 3561	 NonTempChunkSize: 98 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:9	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1733 GB	ChunkFileNumber:3525	ChunkFileSize:97 GB	 NonTempChunkNumber: 3525	 NonTempChunkSize: 97 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	SSDCache Id:1	DiskStatus:DISK_OK	HuatuoScore:NA	Cleanup:--	TotalSize:446 GB	FreeSize:12 GB
+	SSDCache Id:2	DiskStatus:DISK_OK	HuatuoScore:NA	Cleanup:--	TotalSize:446 GB	FreeSize:12 GB
+  3. NORMAL (0/24913) (ttl=  20) tcp://172.100.4.5:10260 t01d33005.cloud.d33.dt01  SendBuffer : 0(KB)
+	Disk Id:1	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1605 GB	ChunkFileNumber:658	ChunkFileSize:8 GB	 NonTempChunkNumber: 658	 NonTempChunkSize: 8 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:2	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1739 GB	ChunkFileNumber:3540	ChunkFileSize:83 GB	 NonTempChunkNumber: 3540	 NonTempChunkSize: 83 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:3	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1743 GB	ChunkFileNumber:3294	ChunkFileSize:79 GB	 NonTempChunkNumber: 3294	 NonTempChunkSize: 79 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:4	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1737 GB	ChunkFileNumber:3542	ChunkFileSize:87 GB	 NonTempChunkNumber: 3542	 NonTempChunkSize: 87 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:5	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1737 GB	ChunkFileNumber:3428	ChunkFileSize:86 GB	 NonTempChunkNumber: 3428	 NonTempChunkSize: 86 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:6	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1740 GB	ChunkFileNumber:3487	ChunkFileSize:83 GB	 NonTempChunkNumber: 3487	 NonTempChunkSize: 83 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:7	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1738 GB	ChunkFileNumber:3440	ChunkFileSize:85 GB	 NonTempChunkNumber: 3440	 NonTempChunkSize: 85 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:8	DiskStatus:DISK_ERROR	HuatuoScore:NA	Backup:Done	TotalSize:1861 GB	FreeSize:1608 GB	ChunkFileNumber:0	ChunkFileSize:0 Bytes	 NonTempChunkNumber: 0	 NonTempChunkSize: 0 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:9	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1739 GB	ChunkFileNumber:3524	ChunkFileSize:83 GB	 NonTempChunkNumber: 3524	 NonTempChunkSize: 83 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	SSDCache Id:1	DiskStatus:DISK_OK	HuatuoScore:NA	Cleanup:--	TotalSize:446 GB	FreeSize:12 GB
+	SSDCache Id:2	DiskStatus:DISK_OK	HuatuoScore:NA	Cleanup:--	TotalSize:446 GB	FreeSize:12 GB
+  4. DISCONNECTED (NA) (ttl=   0) tcp://172.100.4.2:10260 t01d33002.cloud.d33.dt01  SendBuffer : 0(KB)
+	Disk Id:1	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1751 GB	ChunkFileNumber:2948	ChunkFileSize:76 GB	 NonTempChunkNumber: 2948	 NonTempChunkSize: 76 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:2	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1754 GB	ChunkFileNumber:2946	ChunkFileSize:73 GB	 NonTempChunkNumber: 2946	 NonTempChunkSize: 73 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:3	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1751 GB	ChunkFileNumber:3045	ChunkFileSize:77 GB	 NonTempChunkNumber: 3045	 NonTempChunkSize: 77 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:4	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1748 GB	ChunkFileNumber:3085	ChunkFileSize:79 GB	 NonTempChunkNumber: 3085	 NonTempChunkSize: 79 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:5	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1752 GB	ChunkFileNumber:3013	ChunkFileSize:76 GB	 NonTempChunkNumber: 3013	 NonTempChunkSize: 76 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:6	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1753 GB	ChunkFileNumber:3016	ChunkFileSize:75 GB	 NonTempChunkNumber: 3016	 NonTempChunkSize: 75 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:7	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1749 GB	ChunkFileNumber:3133	ChunkFileSize:80 GB	 NonTempChunkNumber: 3133	 NonTempChunkSize: 80 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:8	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1751 GB	ChunkFileNumber:3047	ChunkFileSize:77 GB	 NonTempChunkNumber: 3047	 NonTempChunkSize: 77 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:9	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1748 GB	ChunkFileNumber:3106	ChunkFileSize:79 GB	 NonTempChunkNumber: 3106	 NonTempChunkSize: 79 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	SSDCache Id:1	DiskStatus:DISK_OK	HuatuoScore:NA	Cleanup:--	TotalSize:446 GB	FreeSize:12 GB
+	SSDCache Id:2	DiskStatus:DISK_OK	HuatuoScore:NA	Cleanup:--	TotalSize:446 GB	FreeSize:12 GB
+  5. NORMAL (30000/32301) (ttl=  20) tcp://172.100.4.3:10260 t01d33003.cloud.d33.dt01  SendBuffer : 0(KB)
+	Disk Id:1	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1733 GB	ChunkFileNumber:3657	ChunkFileSize:95 GB	 NonTempChunkNumber: 3657	 NonTempChunkSize: 95 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:2	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1733 GB	ChunkFileNumber:3677	ChunkFileSize:94 GB	 NonTempChunkNumber: 3677	 NonTempChunkSize: 94 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:3	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1737 GB	ChunkFileNumber:3522	ChunkFileSize:92 GB	 NonTempChunkNumber: 3522	 NonTempChunkSize: 92 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:4	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1736 GB	ChunkFileNumber:3568	ChunkFileSize:91 GB	 NonTempChunkNumber: 3568	 NonTempChunkSize: 91 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:5	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1735 GB	ChunkFileNumber:3592	ChunkFileSize:93 GB	 NonTempChunkNumber: 3592	 NonTempChunkSize: 93 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:6	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1736 GB	ChunkFileNumber:3574	ChunkFileSize:91 GB	 NonTempChunkNumber: 3574	 NonTempChunkSize: 91 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:7	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1736 GB	ChunkFileNumber:3606	ChunkFileSize:91 GB	 NonTempChunkNumber: 3606	 NonTempChunkSize: 91 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:8	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1739 GB	ChunkFileNumber:3531	ChunkFileSize:89 GB	 NonTempChunkNumber: 3531	 NonTempChunkSize: 89 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:9	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1735 GB	ChunkFileNumber:3574	ChunkFileSize:92 GB	 NonTempChunkNumber: 3574	 NonTempChunkSize: 92 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	SSDCache Id:1	DiskStatus:DISK_OK	HuatuoScore:NA	Cleanup:--	TotalSize:446 GB	FreeSize:12 GB
+	SSDCache Id:2	DiskStatus:DISK_OK	HuatuoScore:NA	Cleanup:--	TotalSize:446 GB	FreeSize:12 GB
+  6. NORMAL (20000/30725) (ttl=  20) tcp://172.100.4.6:10260 t01d33006.cloud.d33.dt01  SendBuffer : 0(KB)
+	Disk Id:1	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1733 GB	ChunkFileNumber:3502	ChunkFileSize:96 GB	 NonTempChunkNumber: 3502	 NonTempChunkSize: 96 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:2	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1738 GB	ChunkFileNumber:3325	ChunkFileSize:90 GB	 NonTempChunkNumber: 3325	 NonTempChunkSize: 90 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:3	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1737 GB	ChunkFileNumber:3394	ChunkFileSize:92 GB	 NonTempChunkNumber: 3394	 NonTempChunkSize: 92 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:4	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1736 GB	ChunkFileNumber:3425	ChunkFileSize:93 GB	 NonTempChunkNumber: 3425	 NonTempChunkSize: 93 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:5	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1736 GB	ChunkFileNumber:3467	ChunkFileSize:94 GB	 NonTempChunkNumber: 3467	 NonTempChunkSize: 94 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:6	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1736 GB	ChunkFileNumber:3397	ChunkFileSize:94 GB	 NonTempChunkNumber: 3397	 NonTempChunkSize: 94 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:7	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1736 GB	ChunkFileNumber:3409	ChunkFileSize:93 GB	 NonTempChunkNumber: 3409	 NonTempChunkSize: 93 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:8	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1739 GB	ChunkFileNumber:3431	ChunkFileSize:90 GB	 NonTempChunkNumber: 3431	 NonTempChunkSize: 90 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	Disk Id:9	DiskStatus:DISK_OK	HuatuoScore:NA	Backup:--	TotalSize:1861 GB	FreeSize:1736 GB	ChunkFileNumber:3375	ChunkFileSize:92 GB	 NonTempChunkNumber: 3375	 NonTempChunkSize: 92 GB	 TempChunkNumber: 0	 TempChunkSize: 0 GB
+	SSDCache Id:1	DiskStatus:DISK_OK	HuatuoScore:NA	Cleanup:--	TotalSize:446 GB	FreeSize:12 GB
+	SSDCache Id:2	DiskStatus:DISK_OK	HuatuoScore:NA	Cleanup:--	TotalSize:446 GB	FreeSize:12 GB
+
+The pangu disk status:
+Total Disk Size:100506 GB
+Total Free Disk Size:74506 GB
+Total File Size:4871 GB
+Total UnReserved Disk Space4Piops:0 GB
+Total Disk Space4Piops:0 GB
+Total UnReserved Disk Iops4Piops:0
+Total Disk Iops4Piops:0
+TotalChunkNumber:186386	 NonTempChunkNumber:186386	 NonTempChunkDataSize:4871 GB	 TempChunkNumber:0	 TempChunkDataSize:0 GB
+
+No.	Rack	UsableChunkserver/TotalChunkserver	UsableDisk/TotalDisk	TotalDiskSize	TotalFreeDiskSize
+1	t01d33	5/6                               	43/54               	100506 GB    	74506 GB
+
+Number of Racks:				1
+Number of Usable Racks(Having at least one disk with Free Disk Size > 10GB):	1

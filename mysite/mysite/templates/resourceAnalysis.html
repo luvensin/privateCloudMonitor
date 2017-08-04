@@ -1,0 +1,236 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+{% block content %}
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+  <legend>数据大盘</legend>
+</fieldset>
+<div id="chartmain" style="width:1400px; height: 700px;"></div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    
+    $.ajax({
+      type : "GET",
+      dataType : "json",
+      async:true,
+      url : {% url 'mainPage' %},
+      success:function(data){
+
+
+  
+   
+  var labelTop = {
+    normal : {
+        label : {
+            show : true,
+            position : 'center',
+            formatter : '{b}',
+            textStyle: {
+                baseline : 'bottom'
+            }
+        },
+        labelLine : {
+            show : false
+        }
+    }
+};
+  var labelFromatter = {
+      normal : {
+          label : {
+              formatter : function (params){
+                  return 100 - params.value + '%'
+              },
+              textStyle: {
+                  baseline : 'top'
+              }
+          }
+      },
+  }
+  var labelBottom = {
+      normal : {
+          color: '#ccc',
+          label : {
+              show : true,
+              position : 'center'
+          },
+          labelLine : {
+              show : true
+          }
+      },
+      emphasis: {
+          color: 'rgba(0,0,0,0)'
+      }
+  };
+  var radius = [60, 75];
+  option = {
+      legend: {
+          x : 'center',
+          y : 'center',
+          data:[
+              'ECS主机','ADS主机','DOCKER宿主机','OSS主机','ODPS主机',
+              'GALAXY主机', 'OTS主机', 'SLB主机', '保留1', ' 保留2'
+          ]
+      },
+      title : {
+          text: 'CDU产品主机占比情况',
+          subtext: 'make shitty things happend',
+          x: 'center'
+      },
+    toolbox: {
+        show : true,
+        feature : {
+            dataView : {show: true, readOnly: false},
+            magicType : {
+                show: true, 
+                type: ['pie', 'funnel'],
+                option: {
+                    funnel: {
+                        width: '50%',
+                        height: '50%',
+                        itemStyle : {
+                            normal : {
+                                label : {
+                                    formatter : function (params){
+                                        return 'other\n' + params.value + '%\n'
+                                    },
+                                    textStyle: {
+                                        baseline : 'middle'
+                                    }
+                                }
+                            },
+                        } 
+                    }
+                }
+            },
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    series : [
+        {
+            type : 'pie',
+            center : ['10%', '30%'],
+            radius : radius,
+            x: '0%', // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'other', value:100-parseInt(data.ecs), itemStyle : labelBottom},
+                {name:'ECS主机', value:parseInt(data.ecs),itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['30%', '30%'],
+            radius : radius,
+            x:'20%', // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'other', value:100-parseInt(data.ads), itemStyle : labelBottom},
+                {name:'ADS主机', value:parseInt(data.ads),itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['50%', '30%'],
+            radius : radius,
+            x:'40%', // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'other', value:100-parseInt(data.dockerHost), itemStyle : labelBottom},
+                {name:'DOCKER宿主机', value:parseInt(data.dockerHost),itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['70%', '30%'],
+            radius : radius,
+            x:'60%', // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'other', value:100-parseInt(data.oss), itemStyle : labelBottom},
+                {name:'OSS主机', value:parseInt(data.oss),itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['90%', '30%'],
+            radius : radius,
+            x:'80%', // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'other', value:100-parseInt(data.odps), itemStyle : labelBottom},
+                {name:'ODPS主机', value:parseInt(data.odps),itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['10%', '70%'],
+            radius : radius,
+            y: '55%',   // for funnel
+            x: '0%',    // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'other', value:100-parseInt(data.galaxy), itemStyle : labelBottom},
+                {name:'GALAXY主机', value:parseInt(data.galaxy),itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['30%', '70%'],
+            radius : radius,
+            y: '55%',   // for funnel
+            x:'20%',    // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'other', value:100-parseInt(data.ots), itemStyle : labelBottom},
+                {name:'OTS主机', value:parseInt(data.ots),itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['50%', '70%'],
+            radius : radius,
+            y: '55%',   // for funnel
+            x:'40%', // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'other', value:100-parseInt(data.slb), itemStyle : labelBottom},
+                {name:'SLB主机', value:parseInt(data.slb),itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['70%', '70%'],
+            radius : radius,
+            y: '55%',   // for funnel
+            x:'60%', // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'other', value:83, itemStyle : labelBottom},
+                {name:'DRDS', value:17,itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['90%', '70%'],
+            radius : radius,
+            y: '55%',   // for funnel
+            x:'80%', // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'other', value:89, itemStyle : labelBottom},
+                {name:'保留2', value:11,itemStyle : labelTop}
+            ]
+        }
+    ]
+};
+  var myChart = echarts.init(document.getElementById('chartmain'));
+  myChart.setOption(option);
+  }
+ });
+});                      
+</script>
+
+
+
+<p class="layui-elem-quote">其实就是自定义了个“|”的分隔符，然后最后一项也可以点。</p>        
+{% endblock %}

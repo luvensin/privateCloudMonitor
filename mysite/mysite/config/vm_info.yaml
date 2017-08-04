@@ -1,0 +1,268 @@
+- {host_name: iZ880wq08u9Z, memory: !!python/long '4096', name: i-880wq08u9, nc_id: 1002-13,
+  user_id: '170', vcpu: !!python/long '2'}
+- {host_name: iZ88122h3f1Z, memory: !!python/long '32768', name: i-88122h3f1, nc_id: 1001-4,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ881niw9erZ, memory: !!python/long '2048', name: i-881niw9er, nc_id: 1002-7,
+  user_id: '176', vcpu: !!python/long '2'}
+- {host_name: iZ881qq81qzZ, memory: !!python/long '32768', name: i-881qq81qz, nc_id: 1001-1,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ881tosxygZ, memory: !!python/long '1024', name: i-881tosxyg, nc_id: 1002-16,
+  user_id: '174', vcpu: !!python/long '1'}
+- {host_name: iZ881ymvgwpZ, memory: !!python/long '32768', name: i-881ymvgwp, nc_id: 1001-5,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ8822ws4jhZ, memory: !!python/long '1024', name: i-8822ws4jh, nc_id: 1001-3,
+  user_id: '170', vcpu: !!python/long '1'}
+- {host_name: iZ882yb9qizZ, memory: !!python/long '8192', name: i-882yb9qiz, nc_id: 1001-4,
+  user_id: '175', vcpu: !!python/long '8'}
+- {host_name: iZ882yscu7wZ, memory: !!python/long '8192', name: i-882yscu7w, nc_id: 1002-1,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ883qyyyzdZ, memory: !!python/long '1024', name: i-883qyyyzd, nc_id: 1002-13,
+  user_id: '174', vcpu: !!python/long '1'}
+- {host_name: iZ883x6q75nZ, memory: !!python/long '16384', name: i-883x6q75n, nc_id: 1001-3,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ8842k2j2sZ, memory: !!python/long '8192', name: i-8842k2j2s, nc_id: 1002-14,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ8849lfctsZ, memory: !!python/long '16384', name: i-8849lfcts, nc_id: 1002-1,
+  user_id: '177', vcpu: !!python/long '8'}
+- {host_name: iZ884lpnw7iZ, memory: !!python/long '65536', name: i-884lpnw7i, nc_id: 1002-8,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ884ndao6tZ, memory: !!python/long '8192', name: i-884ndao6t, nc_id: 1002-10,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ8855oy0cuZ, memory: !!python/long '65536', name: i-8855oy0cu, nc_id: 1002-1,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88561f4d9Z, memory: !!python/long '1024', name: i-88561f4d9, nc_id: 1002-9,
+  user_id: '181', vcpu: !!python/long '1'}
+- {host_name: iZ885eddyg2Z, memory: !!python/long '1024', name: i-885eddyg2, nc_id: 1002-5,
+  user_id: '170', vcpu: !!python/long '1'}
+- {host_name: iZ885gsdt2cZ, memory: !!python/long '8192', name: i-885gsdt2c, nc_id: 1002-16,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ8865nfkfnZ, memory: !!python/long '8192', name: i-8865nfkfn, nc_id: 1002-5,
+  user_id: '175', vcpu: !!python/long '8'}
+- {host_name: iZ8866wuhp0Z, memory: !!python/long '16384', name: i-8866wuhp0, nc_id: 1002-7,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ8878fj0xaZ, memory: !!python/long '1024', name: i-8878fj0xa, nc_id: 1002-5,
+  user_id: '170', vcpu: !!python/long '1'}
+- {host_name: iZ887jp4y40Z, memory: !!python/long '8192', name: i-887jp4y40, nc_id: 1001-6,
+  user_id: '175', vcpu: !!python/long '8'}
+- {host_name: iZ887x88pz3Z, memory: !!python/long '4096', name: i-887x88pz3, nc_id: 1001-2,
+  user_id: '167', vcpu: !!python/long '2'}
+- {host_name: iZ888bkb99bZ, memory: !!python/long '32768', name: i-888bkb99b, nc_id: 1001-3,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ888lym8ifZ, memory: !!python/long '16384', name: i-888lym8if, nc_id: 1002-13,
+  user_id: '180', vcpu: !!python/long '8'}
+- {host_name: iZ889b70ct3Z, memory: !!python/long '2048', name: i-889b70ct3, nc_id: 1002-7,
+  user_id: '170', vcpu: !!python/long '1'}
+- {host_name: iZ889gjx1w1Z, memory: !!python/long '32768', name: i-889gjx1w1, nc_id: 1001-2,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ889mmep6lZ, memory: !!python/long '8192', name: i-889mmep6l, nc_id: 1002-9,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ889o2d6o6Z, memory: !!python/long '4096', name: i-889o2d6o6, nc_id: 1001-3,
+  user_id: '167', vcpu: !!python/long '2'}
+- {host_name: iZ88a7zlgkkZ, memory: !!python/long '16384', name: i-88a7zlgkk, nc_id: 1002-11,
+  user_id: '177', vcpu: !!python/long '4'}
+- {host_name: iZ88akknio0Z, memory: !!python/long '32768', name: i-88akknio0, nc_id: 1002-6,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88apc8p0xZ, memory: !!python/long '4096', name: i-88apc8p0x, nc_id: 1001-6,
+  user_id: '167', vcpu: !!python/long '2'}
+- {host_name: iZ88bhso8ryZ, memory: !!python/long '8192', name: i-88bhso8ry, nc_id: 1002-13,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88bijhyhmZ, memory: !!python/long '16384', name: i-88bijhyhm, nc_id: 1002-8,
+  user_id: '179', vcpu: !!python/long '8'}
+- {host_name: iZ88bjpsi6oZ, memory: !!python/long '1024', name: i-88bjpsi6o, nc_id: 1002-17,
+  user_id: '170', vcpu: !!python/long '1'}
+- {host_name: iZ88boitg5tZ, memory: !!python/long '8192', name: i-88boitg5t, nc_id: 1002-5,
+  user_id: '174', vcpu: !!python/long '4'}
+- {host_name: iZ88bw5tvanZ, memory: !!python/long '32768', name: i-88bw5tvan, nc_id: 1001-3,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88c4q1kciZ, memory: !!python/long '4096', name: i-88c4q1kci, nc_id: 1001-6,
+  user_id: '177', vcpu: !!python/long '2'}
+- {host_name: iZ88ce9lxz8Z, memory: !!python/long '4096', name: i-88ce9lxz8, nc_id: 1001-5,
+  user_id: '170', vcpu: !!python/long '2'}
+- {host_name: iZ88ck33cwuZ, memory: !!python/long '32768', name: i-88ck33cwu, nc_id: 1002-11,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88clkhbd0Z, memory: !!python/long '16384', name: i-88clkhbd0, nc_id: 1002-7,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88ctca33fZ, memory: !!python/long '32768', name: i-88ctca33f, nc_id: 1002-6,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88d1qzxigZ, memory: !!python/long '4096', name: i-88d1qzxig, nc_id: 1002-11,
+  user_id: '181', vcpu: !!python/long '2'}
+- {host_name: iZ88d3qk4gqZ, memory: !!python/long '1024', name: i-88d3qk4gq, nc_id: 1002-8,
+  user_id: '174', vcpu: !!python/long '1'}
+- {host_name: iZ88d752azaZ, memory: !!python/long '32768', name: i-88d752aza, nc_id: 1001-1,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88dloycjiZ, memory: !!python/long '16384', name: i-88dloycji, nc_id: 1001-5,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88dtxn2qjZ, memory: !!python/long '65536', name: i-88dtxn2qj, nc_id: 1002-12,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88e1h981kZ, memory: !!python/long '32768', name: i-88e1h981k, nc_id: 1002-14,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88e4x6ie1Z, memory: !!python/long '1024', name: i-88e4x6ie1, nc_id: 1002-5,
+  user_id: '174', vcpu: !!python/long '1'}
+- {host_name: iZ88e7uvdzaZ, memory: !!python/long '8192', name: i-88e7uvdza, nc_id: 1002-15,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88gcicyvzZ, memory: !!python/long '4096', name: i-88gcicyvz, nc_id: 1002-14,
+  user_id: '170', vcpu: !!python/long '2'}
+- {host_name: iZ88gn7wickZ, memory: !!python/long '4096', name: i-88gn7wick, nc_id: 1001-4,
+  user_id: '170', vcpu: !!python/long '2'}
+- {host_name: iZ88gt3lwp6Z, memory: !!python/long '32768', name: i-88gt3lwp6, nc_id: 1001-4,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88gvpfdmuZ, memory: !!python/long '1024', name: i-88gvpfdmu, nc_id: 1002-17,
+  user_id: '174', vcpu: !!python/long '1'}
+- {host_name: iZ88gyhkvq5Z, memory: !!python/long '8192', name: i-88gyhkvq5, nc_id: 1002-15,
+  user_id: '176', vcpu: !!python/long '8'}
+- {host_name: iZ88h4xta2eZ, memory: !!python/long '1024', name: i-88h4xta2e, nc_id: 1002-16,
+  user_id: '180', vcpu: !!python/long '1'}
+- {host_name: iZ88h9bk5w0Z, memory: !!python/long '1024', name: i-88h9bk5w0, nc_id: 1002-5,
+  user_id: '170', vcpu: !!python/long '1'}
+- {host_name: iZ88hkmdzb7Z, memory: !!python/long '32768', name: i-88hkmdzb7, nc_id: 1001-1,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88hqfmf7wZ, memory: !!python/long '2048', name: i-88hqfmf7w, nc_id: 1001-2,
+  user_id: '180', vcpu: !!python/long '2'}
+- {host_name: iZ88hsdwf30Z, memory: !!python/long '32768', name: i-88hsdwf30, nc_id: 1001-5,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88hsxdkiwZ, memory: !!python/long '16384', name: i-88hsxdkiw, nc_id: 1002-10,
+  user_id: '180', vcpu: !!python/long '8'}
+- {host_name: iZ88i05qz1iZ, memory: !!python/long '16384', name: i-88i05qz1i, nc_id: 1002-12,
+  user_id: '178', vcpu: !!python/long '4'}
+- {host_name: iZ88i1rpmhgZ, memory: !!python/long '1024', name: i-88i1rpmhg, nc_id: 1001-3,
+  user_id: '174', vcpu: !!python/long '1'}
+- {host_name: iZ88ig2o7grZ, memory: !!python/long '16384', name: i-88ig2o7gr, nc_id: 1002-6,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88iikcmwsZ, memory: !!python/long '16384', name: i-88iikcmws, nc_id: 1002-15,
+  user_id: '177', vcpu: !!python/long '8'}
+- {host_name: iZ88jahleh2Z, memory: !!python/long '4096', name: i-88jahleh2, nc_id: 1001-3,
+  user_id: '167', vcpu: !!python/long '2'}
+- {host_name: iZ88jcjmngqZ, memory: !!python/long '4096', name: i-88jcjmngq, nc_id: 1002-10,
+  user_id: '181', vcpu: !!python/long '2'}
+- {host_name: iZ88jmijxllZ, memory: !!python/long '8192', name: i-88jmijxll, nc_id: 1002-10,
+  user_id: '176', vcpu: !!python/long '8'}
+- {host_name: iZ88k6a2xpoZ, memory: !!python/long '1024', name: i-88k6a2xpo, nc_id: 1002-6,
+  user_id: '174', vcpu: !!python/long '1'}
+- {host_name: iZ88kenpzs7Z, memory: !!python/long '8192', name: i-88kenpzs7, nc_id: 1002-11,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88kfbc5k5Z, memory: !!python/long '1024', name: i-88kfbc5k5, nc_id: 1002-15,
+  user_id: '170', vcpu: !!python/long '1'}
+- {host_name: iZ88kg3tv2iZ, memory: !!python/long '16384', name: i-88kg3tv2i, nc_id: 1002-5,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88kll4u8iZ, memory: !!python/long '32768', name: i-88kll4u8i, nc_id: 1001-4,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88kohjqw4Z, memory: !!python/long '2048', name: i-88kohjqw4, nc_id: 1002-15,
+  user_id: '170', vcpu: !!python/long '2'}
+- {host_name: iZ88kq1oh7rZ, memory: !!python/long '8192', name: i-88kq1oh7r, nc_id: 1002-5,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88ks9as0hZ, memory: !!python/long '8192', name: i-88ks9as0h, nc_id: 1002-7,
+  user_id: '178', vcpu: !!python/long '8'}
+- {host_name: iZ88kx2sj86Z, memory: !!python/long '32768', name: i-88kx2sj86, nc_id: 1001-5,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88kxclhs2Z, memory: !!python/long '32768', name: i-88kxclhs2, nc_id: 1001-1,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88lbae9bnZ, memory: !!python/long '8192', name: i-88lbae9bn, nc_id: 1002-11,
+  user_id: '178', vcpu: !!python/long '8'}
+- {host_name: iZ88llgmfrbZ, memory: !!python/long '8192', name: i-88llgmfrb, nc_id: 1002-12,
+  user_id: '177', vcpu: !!python/long '8'}
+- {host_name: iZ88llo7pvbZ, memory: !!python/long '32768', name: i-88llo7pvb, nc_id: 1001-6,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88lq5gtfqZ, memory: !!python/long '8192', name: i-88lq5gtfq, nc_id: 1002-9,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88m0oloruZ, memory: !!python/long '1024', name: i-88m0oloru, nc_id: 1002-15,
+  user_id: '174', vcpu: !!python/long '1'}
+- {host_name: iZ88m2a9hmkZ, memory: !!python/long '32768', name: i-88m2a9hmk, nc_id: 1001-1,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88m8lwh2uZ, memory: !!python/long '4096', name: i-88m8lwh2u, nc_id: 1001-4,
+  user_id: '170', vcpu: !!python/long '2'}
+- {host_name: iZ88mkf1uvmZ, memory: !!python/long '4096', name: i-88mkf1uvm, nc_id: 1002-1,
+  user_id: '174', vcpu: !!python/long '2'}
+- {host_name: iZ88n9w9n3lZ, memory: !!python/long '8192', name: i-88n9w9n3l, nc_id: 1002-10,
+  user_id: '170', vcpu: !!python/long '2'}
+- {host_name: iZ88pf97z0dZ, memory: !!python/long '4096', name: i-88pf97z0d, nc_id: 1001-4,
+  user_id: '167', vcpu: !!python/long '2'}
+- {host_name: iZ88pgxik3mZ, memory: !!python/long '32768', name: i-88pgxik3m, nc_id: 1001-4,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88pi4oh83Z, memory: !!python/long '8192', name: i-88pi4oh83, nc_id: 1002-1,
+  user_id: '178', vcpu: !!python/long '8'}
+- {host_name: iZ88q26pzq5Z, memory: !!python/long '2048', name: i-88q26pzq5, nc_id: 1002-9,
+  user_id: '179', vcpu: !!python/long '2'}
+- {host_name: iZ88q3b4ubkZ, memory: !!python/long '8192', name: i-88q3b4ubk, nc_id: 1002-7,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88qe5t6ugZ, memory: !!python/long '32768', name: i-88qe5t6ug, nc_id: 1001-2,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88qehpf4kZ, memory: !!python/long '16384', name: i-88qehpf4k, nc_id: 1002-18,
+  user_id: '180', vcpu: !!python/long '8'}
+- {host_name: iZ88r8zwrquZ, memory: !!python/long '32768', name: i-88r8zwrqu, nc_id: 1002-10,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88rehqo5wZ, memory: !!python/long '65536', name: i-88rehqo5w, nc_id: 1002-14,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88rg6ep8hZ, memory: !!python/long '1024', name: i-88rg6ep8h, nc_id: 1002-12,
+  user_id: '170', vcpu: !!python/long '1'}
+- {host_name: iZ88rl6nva7Z, memory: !!python/long '1024', name: i-88rl6nva7, nc_id: 1002-5,
+  user_id: '170', vcpu: !!python/long '1'}
+- {host_name: iZ88rm452d1Z, memory: !!python/long '8192', name: i-88rm452d1, nc_id: 1002-1,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88rncl0sqZ, memory: !!python/long '16384', name: i-88rncl0sq, nc_id: 1002-10,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88ru1vfm2Z, memory: !!python/long '4096', name: i-88ru1vfm2, nc_id: 1001-4,
+  user_id: '167', vcpu: !!python/long '2'}
+- {host_name: iZ88s8zxvbrZ, memory: !!python/long '16384', name: i-88s8zxvbr, nc_id: 1002-13,
+  user_id: '179', vcpu: !!python/long '8'}
+- {host_name: iZ88sf8eg8cZ, memory: !!python/long '16384', name: i-88sf8eg8c, nc_id: 1002-9,
+  user_id: '177', vcpu: !!python/long '8'}
+- {host_name: iZ88slrp2r8Z, memory: !!python/long '16384', name: i-88slrp2r8, nc_id: 1002-13,
+  user_id: '177', vcpu: !!python/long '8'}
+- {host_name: iZ88t5rs7w6Z, memory: !!python/long '32768', name: i-88t5rs7w6, nc_id: 1001-2,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88t8pskivZ, memory: !!python/long '32768', name: i-88t8pskiv, nc_id: 1001-4,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88tk3n5hzZ, memory: !!python/long '16384', name: i-88tk3n5hz, nc_id: 1002-14,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88tpdygwwZ, memory: !!python/long '8192', name: i-88tpdygww, nc_id: 1002-14,
+  user_id: '176', vcpu: !!python/long '8'}
+- {host_name: iZ88tyyyeo3Z, memory: !!python/long '16384', name: i-88tyyyeo3, nc_id: 1002-15,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88ugi2cyxZ, memory: !!python/long '32768', name: i-88ugi2cyx, nc_id: 1001-2,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88ujyvcbjZ, memory: !!python/long '2048', name: i-88ujyvcbj, nc_id: 1002-13,
+  user_id: '175', vcpu: !!python/long '2'}
+- {host_name: iZ88upqtnejZ, memory: !!python/long '8192', name: i-88upqtnej, nc_id: 1002-5,
+  user_id: '174', vcpu: !!python/long '4'}
+- {host_name: iZ88uqkecv6Z, memory: !!python/long '1024', name: i-88uqkecv6, nc_id: 1002-7,
+  user_id: '170', vcpu: !!python/long '1'}
+- {host_name: iZ88ursun9rZ, memory: !!python/long '1024', name: i-88ursun9r, nc_id: 1002-12,
+  user_id: '174', vcpu: !!python/long '1'}
+- {host_name: iZ88uszobk5Z, memory: !!python/long '65536', name: i-88uszobk5, nc_id: 1002-6,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88v3bt2cuZ, memory: !!python/long '1024', name: i-88v3bt2cu, nc_id: 1002-11,
+  user_id: '179', vcpu: !!python/long '1'}
+- {host_name: iZ88v73nzxyZ, memory: !!python/long '8192', name: i-88v73nzxy, nc_id: 1002-11,
+  user_id: '170', vcpu: !!python/long '2'}
+- {host_name: iZ88v8podu0Z, memory: !!python/long '8192', name: i-88v8podu0, nc_id: 1002-15,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88vpqgbdqZ, memory: !!python/long '1024', name: i-88vpqgbdq, nc_id: 1002-18,
+  user_id: '182', vcpu: !!python/long '1'}
+- {host_name: iZ88w5b5xr2Z, memory: !!python/long '1024', name: i-88w5b5xr2, nc_id: 1002-8,
+  user_id: '170', vcpu: !!python/long '1'}
+- {host_name: iZ88wdu3csjZ, memory: !!python/long '1024', name: i-88wdu3csj, nc_id: 1002-9,
+  user_id: '174', vcpu: !!python/long '1'}
+- {host_name: iZ88wlzej8aZ, memory: !!python/long '1024', name: i-88wlzej8a, nc_id: 1002-5,
+  user_id: '181', vcpu: !!python/long '1'}
+- {host_name: iZ88wmvypwqZ, memory: !!python/long '32768', name: i-88wmvypwq, nc_id: 1001-2,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88x1a094uZ, memory: !!python/long '4096', name: i-88x1a094u, nc_id: 1002-5,
+  user_id: '170', vcpu: !!python/long '2'}
+- {host_name: iZ88xfdefx8Z, memory: !!python/long '32768', name: i-88xfdefx8, nc_id: 1001-2,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88xz8axapZ, memory: !!python/long '16384', name: i-88xz8axap, nc_id: 1002-17,
+  user_id: '179', vcpu: !!python/long '8'}
+- {host_name: iZ88ydj1yicZ, memory: !!python/long '1024', name: i-88ydj1yic, nc_id: 1002-18,
+  user_id: '181', vcpu: !!python/long '1'}
+- {host_name: iZ88ydzimsxZ, memory: !!python/long '4096', name: i-88ydzimsx, nc_id: 1002-12,
+  user_id: '170', vcpu: !!python/long '2'}
+- {host_name: iZ88ypgrvclZ, memory: !!python/long '8192', name: i-88ypgrvcl, nc_id: 1002-8,
+  user_id: '170', vcpu: !!python/long '4'}
+- {host_name: iZ88ysbpkumZ, memory: !!python/long '32768', name: i-88ysbpkum, nc_id: 1001-6,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88z2o7ojeZ, memory: !!python/long '32768', name: i-88z2o7oje, nc_id: 1001-5,
+  user_id: '170', vcpu: !!python/long '8'}
+- {host_name: iZ88zmfdub7Z, memory: !!python/long '16384', name: i-88zmfdub7, nc_id: 1002-14,
+  user_id: '179', vcpu: !!python/long '4'}
+- {host_name: iZ88zr4sr8xZ, memory: !!python/long '4096', name: i-88zr4sr8x, nc_id: 1001-6,
+  user_id: '178', vcpu: !!python/long '2'}
