@@ -120,6 +120,7 @@ def getConf(request):
 
 	# else:
 	# 	ret['retcode'] = "出错了"
+	print request.POST
 	ret = {}
 	if "db" == json.loads(request.POST['config'])['confType']:
 		ret = config_Gen.db_conf_gen(**request.POST)

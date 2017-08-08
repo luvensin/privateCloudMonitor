@@ -6,13 +6,15 @@
 <link rel="stylesheet" href="{% static 'css/admin.css' %}">
 <script src="{% static 'echarts-liquidfill.js' %}"></script>
 <script src="{% static 'oss.js' %}"></script>
+<script src="{% static 'oss_load.js' %}"></script>
 <div class="admin-content">
   <div class="admin-content-body">
     <div class="am-g">
 
       <div class="am-u-sm-4" style="height:300px;padding:0px">
         <div class="am-panel am-panel-default" style="height: 95%;width: 95%;margin:auto">
-          <div class="am-panel-bd" >这是一个基本的面板组件。</div>
+          <div class="am-panel-hd"><h2 class="am-panel-title">平均负载</h2></div>
+          <div id="avarge_load" class="am-panel-bd" style="height: 90%;width: 100%"></div>
         </div>
       </div>
 

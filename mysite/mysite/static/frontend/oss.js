@@ -1,46 +1,4 @@
 $(document).ready(function(){
-// var labelTop = {
-//     normal : {
-//         label : {
-//             show : true,
-//             position : 'center',
-//             formatter : '{b}',
-//             textStyle: {
-//                 baseline : 'bottom'
-//             }
-//         },
-//         labelLine : {
-//             show : false
-//         }
-//     }
-// };
-// var labelFromatter = {
-//     normal : {
-//         label : {
-//             formatter : function (params){
-//                 return 100 - params.value + '%'
-//             },
-//             textStyle: {
-//                 baseline : 'top'
-//             }
-//         }
-//     },
-// }
-// var labelBottom = {
-//     normal : {
-//         color: '#ccc',
-//         label : {
-//             show : true,
-//             position : 'center'
-//         },
-//         labelLine : {
-//             show : false
-//         }
-//     },
-//     emphasis: {
-//         color: 'rgba(0,0,0,0)'
-//     }
-// };
 var radius = [40, 60];
 option = { 
 	    tooltip : {
@@ -85,15 +43,18 @@ option = {
             x: '10%', // for funnel
             // itemStyle : labelFromatter,
             data : [
-                {name:'other', value:46},
-                {name:'GoogleMaps', value:54}
+                {name:'free', value:1000000},
+                {name:'used', value:10456890}
             ]
         }
     ]
 };
-                    
+
+                
 
 var myChart = echarts.init(document.getElementById('oss_usage'));
 myChart.setOption(option);
 
+
 })
+
