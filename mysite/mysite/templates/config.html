@@ -52,12 +52,6 @@
       </select>
     </div>
   </div>
-  <div class="layui-form-item layui-form-text">
-    <label class="layui-form-label">备注</label>
-    <div class="layui-input-block">
-      <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
-    </div>
-  </div>
   <div class="layui-form-item">
     <div class="layui-input-block">
       <button class="layui-btn" lay-submit lay-filter="submit">立即提交</button>
@@ -104,8 +98,8 @@
       }
     });
     $( "<button>" )
-      .text( "Show help" )
-      .button()
+      // .text( "Show help" )
+      // .button()
       .on( "click", function() {
         tooltips.tooltip( "open" );
       })
@@ -123,7 +117,7 @@
     display: inline-block;
   }
   .ui-tooltip {
-    width: 210px;
+    width: auto;
   }
   </style>
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
@@ -150,42 +144,42 @@
 
   <!-- item sepreate-->
   <div class="layui-form-item">
-    <label style="width: 150px" class="layui-form-label">内部域名</label>
+    <label style="width: 150px" class="layui-form-label">intranet-domain</label>
     <div class="layui-input-inline">
       <input style="width: 400px" type="text" name="intranet-domain" required lay-verify="required" placeholder="eg: xxx.dtdream.com " autocomplete="off" class="layui-input" title="域名最好不要超过五级，就是不要多于四个点"> 
     </div>
   </div>
   <!-- item sepreate-->
   <div class="layui-form-item">
-    <label style="width: 150px" class="layui-form-label">外部域名</label>
+    <label style="width: 150px" class="layui-form-label">internet-domain</label>
     <div class="layui-input-inline">
       <input style="width: 400px" type="text" name="internet-domain" required lay-verify="required" placeholder="eg: xxx.dtdream.com 不超过五级" autocomplete="off" class="layui-input"> 
     </div>
   </div>
   <!-- item sepreate-->
   <div class="layui-form-item">
-    <label style="width: 150px" class="layui-form-label">运维域名</label>
+    <label style="width: 150px" class="layui-form-label">yunwei-domain</label>
     <div class="layui-input-inline">
       <input style="width: 400px" type="text" name="yunwei-domain" required lay-verify="required" placeholder="eg: xxx.dtdream.com 不超过五级" autocomplete="off" class="layui-input" value="tbsite.net" disabled> 
     </div>
   </div>
   <!-- item sepreate-->
   <div class="layui-form-item">
-    <label style="width: 150px" class="layui-form-label">瑶池id</label>
+    <label style="width: 150px" class="layui-form-label">yaochiaccesskey-id</label>
     <div class="layui-input-inline">
       <input style="width: 400px" type="text" name="yaochiaccesskey-id" required lay-verify="required" placeholder="eg: xxx.dtdream.com 不超过五级" autocomplete="off" class="layui-input" value="eda2a29d3ddaf8fa" disabled> 
     </div>
   </div>
   <!-- item sepreate-->
   <div class="layui-form-item">
-    <label style="width: 150px" class="layui-form-label">瑶池secret</label>
+    <label style="width: 150px" class="layui-form-label">yaochiaccesssecret</label>
     <div class="layui-input-inline">
       <input style="width: 400px" type="text" name="yaochiaccesssecret" required lay-verify="required" placeholder="eg: xxx.dtdream.com 不超过五级" autocomplete="off" class="layui-input" value="6abdfea2bf33789e" disabled> 
     </div>
   </div>
 <!-- item sepreate-->
   <div class="layui-form-item">
-    <label style="width: 150px" class="layui-form-label">新dns域名</label>
+    <label style="width: 150px" class="layui-form-label">dns-newapi-domain</label>
     <div class="layui-input-inline">
       <input style="width: 400px" type="text" name="dns-newapi-domain" required lay-verify="required" placeholder="eg: xxx.dtdream.com 不超过五级" autocomplete="off" class="layui-input" value="dnsapi2.tbsite.net" disabled> 
     </div>
@@ -478,36 +472,132 @@
     </div>
   </div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">docker-network-type</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="docker-network-type" placeholder="vlan" autocomplete="off" class="layui-input" value="vlan" disabled > 
+    </div>
+  </div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">docker-vlan-id</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="docker-vlan-id" placeholder="9" autocomplete="off" class="layui-input" value="9" disabled > 
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">docker-ip</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="docker-ip" placeholder="eg:172.100.8.0/22" autocomplete="off" class="layui-input" title="ip地址规划表中docker的IP地址段，只能是连续的4个C"> 
+    </div>
+  </div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">docker-gateway</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="docker-gateway" placeholder="eg:172.100.11.247" autocomplete="off" class="layui-input" title="ip地址规划表中docker的网关，只能是连续的4个C"> 
+    </div>
+  </div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">mailServer</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="mailServer" placeholder="none" autocomplete="off" class="layui-input" value="none" disabled> 
+    </div>
+  </div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">SMServer</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="SMServer" placeholder="none" autocomplete="off" class="layui-input" value="none" disabled> 
+    </div>
+  </div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">VPC_CIDR_RANGE</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="VPC_CIDR_RANGE" placeholder="eg:172.100.32.0/21" autocomplete="off" class="layui-input" title="vpc地址段，ecs私有地址从这个地址段中取，反是落在vpc里面的产品对外的ip都是来自于此"> 
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">slb_alb_bid_drds</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="slb_alb_bid_drds" placeholder="aliyun_drds" autocomplete="off" class="layui-input" value="aliyun_drds" disabled> 
+    </div>
+  </div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">networkProtocol</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="networkProtocol" placeholder="http" autocomplete="off" class="layui-input" value="http" disabled> 
+    </div>
+  </div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">defaultUser-ak</label>
+    <div class="layui-input-inline">
+      <input style="width: 1000px" type="text" name="defaultUser-ak" placeholder="http" autocomplete="off" class="layui-input" value="'{''name'':''defaultUser'',''id'':''999999999'',''user'':''aliyuntest'',''password'':''aaa111'',''accesskey-id'':''xoaqRuKhu9cvKSTC'',''accesskey-secret'':''cc9fgLuEutYGY6iQnYtpNftzo6UzvV''}'" disabled> 
+    </div>
+  </div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">superUser-ak</label>
+    <div class="layui-input-inline">
+      <input style="width: 1000px" type="text" name="superUser-ak" autocomplete="off" class="layui-input" value="'{''name'':''superKey'',''id'':''10000000:01'',''user'':''test1000000001@aliyun.com'',''password'':''aaa111'',''accesskey-id'':''fa836c6e01fdfae0'',''accesskey-secret'':''786bf2d4f3838689''}'" disabled> 
+    </div>
+  </div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">beaver_nets</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="beaver_nets" placeholder="有流量清洗的时候需要" autocomplete="off" class="layui-input" title="具体的配置咨询刘浩"> 
+    </div>
+  </div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">minirds</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="minirds" placeholder="minirds部署方式" autocomplete="off" class="layui-input" value="partial" disabled> 
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">logoProtocol</label>
+    <div class="layui-input-inline">
+      <input style="width: 1000px" type="text" name="logoProtocol" autocomplete="off" class="layui-input" value="'{''version_info'':''Hangzhou DtDream Technology Co., Ltd.  All rights reserved.'',''login_png'':''http://fileserver.tbsite.net:81/logo/login.png'',''logo_png'':''http://fileserver.tbsite.net:81/logo/right.png'',''title'':''title'',''dtcsc_png'':''http://fileserver.tbsite.net:81/logo/dtcsc_logo.png'',''title_png'':''http://fileserver.tbsite.net:81/logo/title.png''}'" disabled> 
+    </div></div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">https_certificate_path</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="https_certificate_path" autocomplete="off" class="layui-input" value="https_test.crt" disabled> 
+    </div>
+  </div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">https_certificate_key_path</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="https_certificate_key_path" autocomplete="off" class="layui-input" value="https_test.key" disabled> 
+    </div>
+  </div>
   <!-- item sepreate-->
-  <div class="layui-form-item"></div>
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">aliguard_dynamic_config</label>
+    <div class="layui-input-inline">
+      <input style="width: 1000px" type="text" name="aliguard_dynamic_config" autocomplete="off" class="layui-input" placeholder="如果有云盾的据点这个配置需要写一下" title="咨询一下刘浩"> 
+    </div>
+  </div>
+  <!-- item sepreate-->
+  <div class="layui-form-item">
+    <label style="width: 150px" class="layui-form-label">chenxiang_portal</label>
+    <div class="layui-input-inline">
+      <input style="width: 400px" type="text" name="chenxiang_portal" autocomplete="off" class="layui-input" value="external.chenxiang.tbsite.net" disabled> 
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="submit">生成site表</button>
+    </div>
+  </div>
 </form>
 
 

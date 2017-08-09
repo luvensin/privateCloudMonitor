@@ -87,40 +87,6 @@ def OssDataShow(request):
 def parseConf(request):
 	return render_to_response("config.html")
 def getConf(request):
-	# ret = {}
-	# path = "/".join([os.getcwd(),"mysite/config"])
-	# db_conf = path + "/" +"database.yaml"
-	# url_conf = path + "/" +"url.yaml"
-	# database = {}
-	# url = {}
-	# if request.POST:
-	# 	config = json.loads(request.POST['config'])
-	# 	if config['confType'] == "db":
-	# 		#reorg data
-	# 	   database['host'] = config['url']
-	# 	   database['username'] = config['usrname']
-	# 	   database['password'] = config['password']
-	# 	   database['port'] = config['port']
-	# 	   db_config = open(db_conf , 'a')
-	# 	   if config['url'] in yaml.load(file(db_conf,'r'))['host']
-	# 	   	ret['retcode'] = "条目已经存在"
-	# 	   	sys.exit(1)
-	# 	   db_config.write(yaml.dump(database))
-	# 	   db_config.close()
-	# 	   ret['retcode'] = '增加一条数据库信息'
-	# 	else:
-	# 		url['url'] = config['url']
-	# 		url['login'] = config['usrname']
-	# 		url['pass'] = config['password']
-	# 		url['product'] = config['productType']
-	# 		url_config = open(url_conf , 'a')
-	# 		url_config.write(yaml.dump(url))
-	# 		url_config.close()
-	# 		ret['retcode'] = '增加一条url信息'
-
-	# else:
-	# 	ret['retcode'] = "出错了"
-	print request.POST
 	ret = {}
 	if "db" == json.loads(request.POST['config'])['confType']:
 		ret = config_Gen.db_conf_gen(**request.POST)
@@ -140,37 +106,6 @@ def refresh(request):
 def table_test(request):
 	return render_to_response("test.html")
 
-
-# def ecs(request): 
-# 	data_post = {}
-# 	data_in = Ecs.objects.all()
-# 	data = list(data_in.values())
-# 	data_post = {"data": data}
-
-# 	return HttpResponse(json.dumps(data_post))
-	# else:
-	# 	return HttpResponse("failed")
-		# return render(request,"table_test.html",{"total":len(data),"rows":data})
-	# return HttpResponse(json.dumps(data))
-	#return render_to_response("table_test.html",{"rows":data})
-	# print {"total":len(data),"rows":data}
-	# print json.dumps(data,sort_keys=True,indent=2)
-
-	
-#disable updatefunction 
-# def ecs_update(request):
-# 	print request.POST
-# 	data = ecs_module.ECS_info().update_ecs()
-# 	result = {}
-# 	ret_list = []
-# 	for ret in data:
-# 		ret_list.append(ret['retCode'])
-# 	retBool = 1 in ret_list
-# 	if not retBool:
-# 		data = {"retCode":"ok"}
-# 	else:
-# 		data = {'retCode':"false"}
-# 	return HttpResponse(json.dumps(data))
 
 
 def Conf(request):
