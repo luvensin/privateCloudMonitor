@@ -9,22 +9,29 @@ import json
 import sys
 sys.path.append('../')
 import os
-from mysite.basefunc import update_rtable , db ,ecs_module , analystic , config_Gen
+from mysite.basefunc import update_rtable , db ,ecs_module , analystic , config_Gen , minirds_conf
 from mysite.config import parse_data_ecs , parse_data_ecs_pangu
 # Create your views here.
 from django.utils.safestring import SafeString
 import yaml
 #home page
 # ---------------------------------------------------------------------------------
-def homeDataParse(request):
-	rows = Rtable.objects.all()
-	data = {"data":list(rows.values())}
-	return HttpResponse(json.dumps(data))
+# def homeDataParse(request):
+# 	ret = update_rtable.Rtable_info().update_db()
+# 	rows = Rtable.objects.all()
+# 	r = {"data":list(rows.values())}
+# 	return HttpResponse(json.dumps(data))
 def homePage(request):
-	return render_to_response("home_page.html")
+	# ret = update_rtable.Rtable_info().update_db()
+	# rows = Rtable.objects.all()
+	# rtable = list(rows.values())
+	data = minirds_conf.read_minirds_conf()
+	return render(request , "home_page.html" , {"data" : data})
 
 # --------------------------------ecs主页信息-------------------------------------
 def ecsPage(request):
+	ret = ecs_module.ECS_info().update_ecs()
+	print ret
 	return render_to_response("product_list.html")
 def ecsData(request):
 	ecs_nc = Ecs.objects.all().values()

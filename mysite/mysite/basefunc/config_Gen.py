@@ -38,9 +38,7 @@ def ifexist(item , filepath):
 def db_conf_gen(**db):
 	ret = {}
 	data = json.loads(db['config'][0])
-	print "url = %s"%data['url']
 	path = "/".join([os.getcwd() , "mysite/config/db_conf.yaml"])
-	print path
 	conf = open(path , 'a+')
 	# data_len = os.path.getsize(path)
 	print ifexist(data['url'] , path)

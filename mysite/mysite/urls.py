@@ -17,12 +17,11 @@ from django.conf.urls import url
 from django.contrib import admin
 from mysite.views import HELLO,home_page,template_demo,template_demo2,template_demo3,template_demo4
 #from siteDemo.tests import current_url,user_agent,display_meta,search_Auth,search,bootstrap_demo,home
-from siteDemo.views import OssDataShow , offline_ecs_pangu,shutdown_ecs_pangu,ecsDataPangu, homePage, homeDataParse, ecsPage ,ecsData , lock , unlock , dataAnalysis , mainPage , parseConf , getConf , EcsDataShow , ecsDataPanel
+from siteDemo.views import OssDataShow , offline_ecs_pangu,shutdown_ecs_pangu,ecsDataPangu, homePage, ecsPage ,ecsData , lock , unlock , dataAnalysis , mainPage , parseConf , getConf , EcsDataShow , ecsDataPanel
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$' , homePage),
-    url(r'homePage/' , homeDataParse ,  name="homePage"),
 
     url(r'^ecs$' , ecsPage),
     url(r'data/ecsdata/', ecsData , name="ecsData" ),
@@ -45,19 +44,4 @@ urlpatterns = [
     url(r'config$' , parseConf ),
     url(r'confPost/' ,getConf , name="confPost" )
 
-
-
-
-
-    # url(r'rtable' , home)
-    # url(r'^hello/', HELLO),
-    # url(r'^template/$' , template_demo),
-    # url(r'^template2/$' , template_demo2),
-    # url(r'^template3/$' , template_demo3),
-    # url(r'^template4/(\d{1,2})/$' , template_demo4),
-    # url(r'^time/(\d{1,2})/$', home_page),
-    # url(r'^tests/$' , display_meta),
-    # url(r'^searchBlank/$' , search_Auth),
-    # url(r'^search/$' , search),
-    # url(r'^bootstrap/$' , bootstrap_demo)
 ]

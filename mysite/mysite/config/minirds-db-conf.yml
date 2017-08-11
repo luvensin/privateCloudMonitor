@@ -1,0 +1,117 @@
+aurora:
+  DB_MASTER_HOST: 172.100.7.129
+  DB_MASTER_IDC: dt01
+  DB_MYSQL_account: '{"url": "account.mysql.rds.cloud.dtdream.com", "superuser": "account",
+    "superpassword": "jfqnrk8Oa6yfOcof", "port": 3400}'
+  DB_MYSQL_ambari: '{"url": "ambari.mysql.rds.cloud.dtdream.com", "port": 3310}'
+  DB_MYSQL_armory: '{"url": "armory.mysql.rds.cloud.dtdream.com", "port": 3312}'
+  DB_MYSQL_bak: '{"url": "bak.mysql.rds.cloud.dtdream.com", "port": 3307}'
+  DB_MYSQL_cmdb: '{"url": "cmdb.mysql.rds.cloud.dtdream.com", "port": 3313}'
+  DB_MYSQL_dbaas: '{"url": "dbaas.mysql.rds.cloud.dtdream.com", "port": 3304}'
+  DB_MYSQL_diamond: '{"url": "diamond.mysql.rds.cloud.dtdream.com", "superuser": "diamond",
+    "superpassword": "Dxh2eTuktq9uaotp", "port": 3404}'
+  DB_MYSQL_drds: '{"url": "drds-metadata.mysql.rds.cloud.dtdream.com", "port": 3308}'
+  DB_MYSQL_dubbo: '{"url": "dubbo.mysql.rds.cloud.dtdream.com", "superuser": "dubbo",
+    "superpassword": "36vwUitodjvJnkff", "port": 3403}'
+  DB_MYSQL_dukang: '{"url": "dukang.mysql.rds.cloud.dtdream.com", "port": 3309}'
+  DB_MYSQL_eta_aol_db: '{"url": "eta-aol-db.mysql.rds.cloud.dtdream.com", "superuser":
+    "eta_aol_db", "superpassword": "Tvu6zFfekf9vkurk", "port": 3408}'
+  DB_MYSQL_eta_brain_db: '{"url": "eta-brain-db.mysql.rds.cloud.dtdream.com", "superuser":
+    "eta_brain_db", "superpassword": "Cn0obweqmyl7pfpI", "port": 3411}'
+  DB_MYSQL_eta_cmdb_db: '{"url": "eta-cmdb-db.mysql.rds.cloud.dtdream.com", "superuser":
+    "eta_cmdb_db", "superpassword": "zzsq3xz9fkfgsqYC", "port": 3409}'
+  DB_MYSQL_eta_lrg_db: '{"url": "eta-lrg-db.mysql.rds.cloud.dtdream.com", "superuser":
+    "eta_lrg_db", "superpassword": "bEUpsx6yiuxsf8jp", "port": 3410}'
+  DB_MYSQL_eta_sop_new_db: '{"url": "eta-sop-new-db.mysql.rds.cloud.dtdream.com",
+    "superuser": "eta_sop_new_db", "superpassword": "iqyrvzwd0hW6wabL", "port": 3407}'
+  DB_MYSQL_houyi: '{"url": "houyi.mysql.rds.cloud.dtdream.com", "superuser": "houyi",
+    "superpassword": "yqoeVy8hg2iovifG", "port": 3405}'
+  DB_MYSQL_houyiregiondb: '{"url": "houyiregiondb.mysql.rds.cloud.dtdream.com", "superuser":
+    "houyiregiondb", "superpassword": "UwkOzluqwk33ghqk", "port": 3406}'
+  DB_MYSQL_oss_meta: '{"url": "oss-meta.mysql.rds.cloud.dtdream.com", "superuser":
+    "oss_meta", "superpassword": "oVdwnfExmtl34tnq", "port": 3413}'
+  DB_MYSQL_paladin: '{"url": "paladin.mysql.rds.cloud.dtdream.com", "port": 3311}'
+  DB_MYSQL_perf: '{"url": "perf.mysql.rds.cloud.dtdream.com", "port": 3306}'
+  DB_MYSQL_phoenix: '{"url": "phoenix.mysql.rds.cloud.dtdream.com", "superuser": "phoenix",
+    "superpassword": "nzIlwRmdb4xaco2g", "port": 3401}'
+  DB_MYSQL_pop_aliyun_com: '{"url": "pop-aliyun-com.mysql.rds.cloud.dtdream.com",
+    "superuser": "pop_aliyun_com", "superpassword": "pq9xeIvlpqmiiuL2", "port": 3415}'
+  DB_MYSQL_rds_perf: '{"url": "rds-perf.mysql.rds.cloud.dtdream.com", "port": 3305}'
+  DB_MYSQL_slbapi: '{"url": "slbapi.mysql.rds.cloud.dtdream.com", "port": 3301}'
+  DB_MYSQL_stats: '{"url": "stats.mysql.rds.cloud.dtdream.com", "port": 3303}'
+  DB_MYSQL_ummak: '{"url": "ummak.mysql.rds.cloud.dtdream.com", "superuser": "ummak",
+    "superpassword": "ihdacgm95vvTTuni", "port": 3402}'
+  DB_MYSQL_vpcregiondb: '{"url": "vpcregiondb.mysql.rds.cloud.dtdream.com", "superuser":
+    "vpcregiondb", "superpassword": "bc9pf0elonkxeZKx", "port": 3412}'
+  DB_MYSQL_xuanyuan: '{"url": "xuanyuan.mysql.rds.cloud.dtdream.com", "port": 3302}'
+  DB_MYSQL_zixia: '{"url": "zixia.mysql.rds.cloud.dtdream.com", "superuser": "zixia",
+    "superpassword": "kg8jU1cxcfdeuAeb", "port": 3414}'
+  DB_PGSQL_dpphoenix: '{"url": "dpphoenix.pgsql.rds.cloud.dtdream.com", "port": 3320}'
+  DB_SLAVE_HOST: 172.100.7.130
+  DB_SLAVE_IDC: dt01
+  DNS_API: http://dnsapi1.tbsite.net/cgi-bin/dnsapi.cgi
+db-installer:
+  DB_MASTER_HOST: 172.100.7.129
+  DB_MYSQL_account: '{"url": "account.mysql.rds.cloud.dtdream.com", "superuser": "account",
+    "superpassword": "jfqnrk8Oa6yfOcof", "port": 3400}'
+  DB_MYSQL_ambari: '{"url": "ambari.mysql.rds.cloud.dtdream.com", "superuser": "acf31d29d49b24c1",
+    "superpassword": "381d920577e8b04a", "port": 3310}'
+  DB_MYSQL_armory: '{"url": "armory.mysql.rds.cloud.dtdream.com", "superuser": "yMt6xmtseidz2gMy",
+    "superpassword": "ey9LuywtH8zbobds", "port": 3312}'
+  DB_MYSQL_bak: '{"url": "bak.mysql.rds.cloud.dtdream.com", "superuser": "acf31d29d49b24c1",
+    "superpassword": "381d920577e8b04a", "port": 3307}'
+  DB_MYSQL_cmdb: '{"url": "cmdb.mysql.rds.cloud.dtdream.com", "superuser": "yMt6xmtseidz2gMy",
+    "superpassword": "ey9LuywtH8zbobds", "port": 3313}'
+  DB_MYSQL_dbaas: '{"url": "dbaas.mysql.rds.cloud.dtdream.com", "superuser": "acf31d29d49b24c1",
+    "superpassword": "381d920577e8b04a", "port": 3304}'
+  DB_MYSQL_diamond: '{"url": "diamond.mysql.rds.cloud.dtdream.com", "superuser": "diamond",
+    "superpassword": "Dxh2eTuktq9uaotp", "port": 3404}'
+  DB_MYSQL_drds: '{"url": "drds-metadata.mysql.rds.cloud.dtdream.com", "superuser":
+    "acf31d29d49b24c1", "superpassword": "381d920577e8b04a", "port": 3308}'
+  DB_MYSQL_dubbo: '{"url": "dubbo.mysql.rds.cloud.dtdream.com", "superuser": "dubbo",
+    "superpassword": "36vwUitodjvJnkff", "port": 3403}'
+  DB_MYSQL_dukang: '{"url": "dukang.mysql.rds.cloud.dtdream.com", "superuser": "acf31d29d49b24c1",
+    "superpassword": "381d920577e8b04a", "port": 3309}'
+  DB_MYSQL_eta_aol_db: '{"url": "eta-aol-db.mysql.rds.cloud.dtdream.com", "superuser":
+    "eta_aol_db", "superpassword": "Tvu6zFfekf9vkurk", "port": 3408}'
+  DB_MYSQL_eta_brain_db: '{"url": "eta-brain-db.mysql.rds.cloud.dtdream.com", "superuser":
+    "eta_brain_db", "superpassword": "Cn0obweqmyl7pfpI", "port": 3411}'
+  DB_MYSQL_eta_cmdb_db: '{"url": "eta-cmdb-db.mysql.rds.cloud.dtdream.com", "superuser":
+    "eta_cmdb_db", "superpassword": "zzsq3xz9fkfgsqYC", "port": 3409}'
+  DB_MYSQL_eta_lrg_db: '{"url": "eta-lrg-db.mysql.rds.cloud.dtdream.com", "superuser":
+    "eta_lrg_db", "superpassword": "bEUpsx6yiuxsf8jp", "port": 3410}'
+  DB_MYSQL_eta_sop_new_db: '{"url": "eta-sop-new-db.mysql.rds.cloud.dtdream.com",
+    "superuser": "eta_sop_new_db", "superpassword": "iqyrvzwd0hW6wabL", "port": 3407}'
+  DB_MYSQL_houyi: '{"url": "houyi.mysql.rds.cloud.dtdream.com", "superuser": "houyi",
+    "superpassword": "yqoeVy8hg2iovifG", "port": 3405}'
+  DB_MYSQL_houyiregiondb: '{"url": "houyiregiondb.mysql.rds.cloud.dtdream.com", "superuser":
+    "houyiregiondb", "superpassword": "UwkOzluqwk33ghqk", "port": 3406}'
+  DB_MYSQL_oss_meta: '{"url": "oss-meta.mysql.rds.cloud.dtdream.com", "superuser":
+    "oss_meta", "superpassword": "oVdwnfExmtl34tnq", "port": 3413}'
+  DB_MYSQL_paladin: '{"url": "paladin.mysql.rds.cloud.dtdream.com", "superuser": "acf31d29d49b24c1",
+    "superpassword": "381d920577e8b04a", "port": 3311}'
+  DB_MYSQL_perf: '{"url": "perf.mysql.rds.cloud.dtdream.com", "superuser": "acf31d29d49b24c1",
+    "superpassword": "381d920577e8b04a", "port": 3306}'
+  DB_MYSQL_phoenix: '{"url": "phoenix.mysql.rds.cloud.dtdream.com", "superuser": "phoenix",
+    "superpassword": "nzIlwRmdb4xaco2g", "port": 3401}'
+  DB_MYSQL_pop_aliyun_com: '{"url": "pop-aliyun-com.mysql.rds.cloud.dtdream.com",
+    "superuser": "pop_aliyun_com", "superpassword": "pq9xeIvlpqmiiuL2", "port": 3415}'
+  DB_MYSQL_rds_perf: '{"url": "rds-perf.mysql.rds.cloud.dtdream.com", "superuser":
+    "acf31d29d49b24c1", "superpassword": "381d920577e8b04a", "port": 3305}'
+  DB_MYSQL_slbapi: '{"url": "slbapi.mysql.rds.cloud.dtdream.com", "superuser": "yMt6xmtseidz2gMy",
+    "superpassword": "ey9LuywtH8zbobds", "port": 3301}'
+  DB_MYSQL_stats: '{"url": "stats.mysql.rds.cloud.dtdream.com", "superuser": "yMt6xmtseidz2gMy",
+    "superpassword": "ey9LuywtH8zbobds", "port": 3303}'
+  DB_MYSQL_ummak: '{"url": "ummak.mysql.rds.cloud.dtdream.com", "superuser": "ummak",
+    "superpassword": "ihdacgm95vvTTuni", "port": 3402}'
+  DB_MYSQL_vpcregiondb: '{"url": "vpcregiondb.mysql.rds.cloud.dtdream.com", "superuser":
+    "vpcregiondb", "superpassword": "bc9pf0elonkxeZKx", "port": 3412}'
+  DB_MYSQL_xuanyuan: '{"url": "xuanyuan.mysql.rds.cloud.dtdream.com", "superuser":
+    "yMt6xmtseidz2gMy", "superpassword": "ey9LuywtH8zbobds", "port": 3302}'
+  DB_MYSQL_zixia: '{"url": "zixia.mysql.rds.cloud.dtdream.com", "superuser": "zixia",
+    "superpassword": "kg8jU1cxcfdeuAeb", "port": 3414}'
+  DB_PGSQL_dpphoenix: '{"url": "dpphoenix.pgsql.rds.cloud.dtdream.com", "superuser":
+    "yMt6xmtseidz2gMy", "superpassword": "ey9LuywtH8zbobds", "port": 3320, "datadirbase":
+    "/u01/mini-rds/pgsql"}'
+  DB_SLAVE_HOST: 172.100.7.130
+  DNS_API: http://dnsapi1.tbsite.net/cgi-bin/dnsapi.cgi

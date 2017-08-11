@@ -83,10 +83,3 @@ class Rtable_info(object):
         result.append(self.rules(sn,product,ip,hostname,os,clone_scripts,machine,status))
       return result
 
-
-
-
-
-if __name__ == '__main__':
-    pass
-

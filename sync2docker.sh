@@ -2,11 +2,13 @@
 templates="/Users/luvensin/Desktop/github/privateCloudMonitor/mysite/mysite/templates"
 funcdir="/Users/luvensin/Desktop/github/privateCloudMonitor/mysite/mysite/basefunc"
 site="/Users/luvensin/Desktop/github/privateCloudMonitor/mysite/siteDemo"
+config="//Users/luvensin/Desktop/github/privateCloudMonitor/mysite/mysite/config"
 setting="/Users/luvensin/Desktop/github/privateCloudMonitor/mysite/mysite/settings.py"
 static="/Users/luvensin/Desktop/github/privateCloudMonitor/mysite/mysite/static"
 url="/Users/luvensin/Desktop/github/privateCloudMonitor/mysite/mysite/urls.py"
 target_templates="/data/mysite/mysite/"
 target_funcdir="/data/mysite/mysite/"
+target_conf="/data/mysite/mysite/"
 target_site="/data/mysite/"
 target_setting="/data/mysite/mysite/"
 target_url="/data/mysite/mysite/"
@@ -17,6 +19,7 @@ function Ret()
         echo "complated"
     else
         echo "error"
+        exit 255
     fi
 }
 
@@ -45,6 +48,9 @@ docker cp $url $id:$target_url
 Ret
 echo "---------sync setting---------------"
 docker cp $setting $id:$target_setting
+Ret
+echo "---------sync config---------------"
+docker cp $config $id:$target_conf
 Ret
 echo "---------restart docker------------"
 docker restart $id

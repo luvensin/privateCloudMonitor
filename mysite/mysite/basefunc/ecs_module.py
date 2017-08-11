@@ -87,8 +87,5 @@ class ECS_info(object):
         return result
 
 
-
-if __name__ == '__main__':
-    ECS_info().update_ecs()
 	
 
