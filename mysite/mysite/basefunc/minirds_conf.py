@@ -13,6 +13,7 @@ import yaml
 def read_minirds_conf():
 	BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 	path = "/".join([BASE_DIR,"config/minirds-db-conf.yml"])
+    # path = "/alidata/L1workdir/minirds-db-conf.yml"
 	data = yaml.load(file(path , 'rb'))
 	db_dict = {}
 	db_list = []
