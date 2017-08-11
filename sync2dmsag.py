@@ -7,10 +7,10 @@ import paramiko
 import commands
 path = "/".join([os.getcwd() , "mysite"])
 tar_pkg = "/".join([os.getcwd() , "mysite.zip"])
-host = "183.131.17.231"
-port = "54888"
+host = "**********"
+port = "**********"
 user = "root"
-password = "DtDream0209"
+password = "****************"
 
 def init():
     if os.path.isfile(tar_pkg):
