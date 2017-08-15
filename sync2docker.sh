@@ -12,6 +12,9 @@ target_conf="/data/mysite/mysite/"
 target_site="/data/mysite/"
 target_setting="/data/mysite/mysite/"
 target_url="/data/mysite/mysite/"
+ip=`ifconfig bond0|grep inet|awk '{print $2}'|cut -d: -f2`
+echo "-------replace database host--------"
+sed -Ein 's/[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/$ip/g' settings.py
 function Ret()
 {
     ret=`echo $?`

@@ -6,6 +6,7 @@
   <title>数梦</title>
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> -->
   <link rel="stylesheet" href="{% static 'css/layui.css' %}"  media="all">
   <link rel="stylesheet" href="{% static 'css/jquery.dataTables.min.css' %}">
   <link href="{% static 'css/datatable.css' %}" rel="stylesheet">
@@ -17,15 +18,16 @@
   <script src="{% static 'echarts.js' %}"></script>
   <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
 </head>
-<body style="width:1400px; margin: 0px auto;">
+<body style="margin: 10px auto;">
 
- 
-<ul class="layui-nav">
+<div class="row">
+  <div class="col-md-4" style="width: 15%;">
+    <ul class="layui-nav layui-nav-tree layui-nav-side" style="background-color: #393D49">
   <li class="layui-nav-item"><a href="/">主信息界面</a></li>
   <li class="layui-nav-item">
     <a href="/ecs">产品</a>
   </li>
-  <li class="layui-nav-item"><a href="/resourceAnalysis">大数据</a>
+  <li class="layui-nav-item"><a>产品数据分析</a>
   <dl class="layui-nav-child">
     <dd><a href="/EcsDataShow">ECS数据分析</a></dd>
     <dd><a href="">ADS数据分析</a></dd>
@@ -41,9 +43,13 @@
   <li class="layui-nav-item"><a href="/config">配置界面</a></li>
   <li class="layui-nav-item"><a href="">IP地址规划</a></li>
 </ul>
-{% block content %}
+  </div>
+  <div class="col-md-8" style=" position: relative; float: right; width: 85%;">
+    {% block content %}
 
-{%endblock%}              
+    {%endblock%}  
+  </div>
+</div>
 
 <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
 <script>
