@@ -8,7 +8,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
 import django
 django.setup()
 
-from siteDemo.models import Rtable
+#from siteDemo.models import Rtable
 
 class classification(object):
     def __init__(self):

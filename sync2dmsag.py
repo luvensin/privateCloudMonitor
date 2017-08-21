@@ -1,5 +1,5 @@
 #!/bin/python
-
+#-*- coding:utf-8 -*-
 import subprocess
 import shlex
 import os
@@ -7,10 +7,10 @@ import paramiko
 import commands
 path = "/".join([os.getcwd() , "mysite"])
 tar_pkg = "/".join([os.getcwd() , "mysite.zip"])
-host = "**********"
-port = "**********"
+host = "192.168.108.48"
+port = "54888"
 user = "root"
-password = "****************"
+password = "DtDream0209"
 
 def init():
     if os.path.isfile(tar_pkg):

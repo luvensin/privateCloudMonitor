@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
-from models import Rtable , Dbinfo , Ecs
+#from models import rtable 
 import json
 import sys
 sys.path.append('../')

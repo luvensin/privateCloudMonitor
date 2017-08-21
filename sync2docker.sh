@@ -1,20 +1,23 @@
 #!/bin/bash
-templates="/Users/luvensin/Desktop/github/privateCloudMonitor/mysite/mysite/templates"
-funcdir="/Users/luvensin/Desktop/github/privateCloudMonitor/mysite/mysite/basefunc"
-site="/Users/luvensin/Desktop/github/privateCloudMonitor/mysite/siteDemo"
-config="//Users/luvensin/Desktop/github/privateCloudMonitor/mysite/mysite/config"
-setting="/Users/luvensin/Desktop/github/privateCloudMonitor/mysite/mysite/settings.py"
-static="/Users/luvensin/Desktop/github/privateCloudMonitor/mysite/mysite/static"
-url="/Users/luvensin/Desktop/github/privateCloudMonitor/mysite/mysite/urls.py"
+templates="/root/mysite/mysite/templates"
+funcdir="/root/mysite/mysite/basefunc"
+site="/root/mysite/siteDemo"
+config="/root/mysite/mysite/config"
+setting="/root/mysite/mysite/settings.py"
+static="/root/mysite/mysite/static"
+url="/root/mysite/mysite/urls.py"
 target_templates="/data/mysite/mysite/"
 target_funcdir="/data/mysite/mysite/"
 target_conf="/data/mysite/mysite/"
 target_site="/data/mysite/"
 target_setting="/data/mysite/mysite/"
 target_url="/data/mysite/mysite/"
+echo "-----------replace dbhost ip-----------------"
 ip=`ifconfig bond0|grep inet|awk '{print $2}'|cut -d: -f2`
-echo "-------replace database host--------"
-sed -Ein 's/[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/$ip/g' settings.py
+echo $ip
+Ret
+sed -Ein 's/[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/$ip/g' $setting
+Ret
 function Ret()
 {
     ret=`echo $?`
@@ -30,7 +33,7 @@ function Ret()
 
 
 echo "---------start sync dir into docker-----------"
-id=`docker ps |awk '{print $1}'|grep -E "\d+"`
+id=`docker ps |grep delivery|awk '{print $1}'`
 echo $id
 echo "---------sync templates------------"
 echo $templates

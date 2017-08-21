@@ -9,8 +9,8 @@ import django
 django.setup()
 
 
-from update_rtable import Rtable_info
-from siteDemo.models import Ecs , Rtable
+#from update_rtable import Rtable_info
+#from siteDemo.models import Ecs , Rtable
 
 class check_item(object):
     def __init__(self):

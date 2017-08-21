@@ -8,7 +8,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
 import django
 django.setup()
 
-from siteDemo.models import Dbinfo
+#from siteDemo.models import Dbinfo
 class DBinfo(object):
     def __init__(self):
         pass

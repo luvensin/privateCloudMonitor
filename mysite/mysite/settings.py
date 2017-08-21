@@ -81,11 +81,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'shumeng',
         'USER' : 'root',
         'PASSWORD' : '123456',
-        'HOST':'192.168.80.72',
+        'HOST':'10.88.3.238',
         'PORT':'8100',
     }
 }
