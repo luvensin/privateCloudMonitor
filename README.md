@@ -4,3 +4,7 @@
 主界面主要是平台内部管控所需的一些数据库链接字符串、url，将常用的维护信息集中到一块，方便运维人员粘贴复制&登陆
 
 ![image](https://github.com/luvensin/privateCloudMonitor/blob/master/mainpage.png)
+
+2，产品界面
+定义了各个产品所用的物理机的信息已经物理机是否down机，和角色，还有上线下线、锁定解锁等操作
+![image](https://github.com/luvensin/privateCloudMonitor/blob/master/productPage.png)
