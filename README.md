@@ -10,4 +10,4 @@
 ![image](https://github.com/luvensin/privateCloudMonitor/blob/master/productPage.png)
 
 3，产品分析页面，可以看各种资源的占比，即使对整个集群或者单台机器进行资源监控
-![image](https://github.com/luvensin/privateCloudMonitor/blob/master/product\ analysis.png)
+![image](https://github.com/luvensin/privateCloudMonitor/blob/master/product%20analysis.png)
